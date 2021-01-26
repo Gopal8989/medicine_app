@@ -1,0 +1,177 @@
+*{
+  margin: 0%;
+padding: 0%;}
+
+.div1{
+    border-radius: 15px;
+     width: 35vw;
+     font-display: 10px;
+     margin-left:30%;
+     margin-top: 15vh;
+
+     /* border:2px transparent; */
+      box-shadow: 2px 7px 4px 5px  #004557;
+     font-size:17px;
+     
+}
+.nm1{
+    border-radius: 15px;
+    background-color: rgba(1, 0, 2, 0.2);
+     width: 35vw;
+     font-display: 10px;
+     margin-left:30%;
+     margin-top: 10vh;
+
+     /* border:2px transparent; */
+      box-shadow: 3px 10px 4px 5px  #004557;
+     font-size:5px;
+     
+}
+
+
+
+* {
+    box-sizing: border-box;
+    align-items: center;
+    
+   
+  }
+  body {
+      background-image: url(https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/injection_2_other/1800x1200_injection_2_other.jpg);
+      /* background-image: url(https://images.everydayhealth.com/react-component-images/everyday-health-01.png); */
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
+      text-transform: uppercase;  
+      flex-direction: column; 
+      background-size: cover;
+  }
+  
+  .fromm{
+      position: absolute; 
+      right: 550px;
+      padding-bottom: 4px;
+      width: 550px;
+      border: 5px rgb(2, 19, 3) solid;
+       width: 350px;
+      height: 550px; 
+      box-shadow: 0px 7px rgb(3, 88, 138);
+      border-radius: 40px;
+      margin-top: 20px;
+      text-align: center;
+      padding: 50px 50px 10px 50px;
+      margin-bottom: 1px;
+    
+    }
+    
+    
+/* input[type=submit]:hover {
+  background-color: #21e92b;
+} 
+   button{
+    
+       background-color: rgb(3, 88, 138); outline: none;
+       cursor: pointer;
+       outline: none;
+       border: none;
+       box-shadow: 0 2px;
+       
+  } */
+  .button:hover { 
+       background-color:red;
+       border-radius: 20px;
+      
+  }
+  .button:active {
+      transform: translateY(4px);
+  }
+  .btnn:active {
+    transform: translateY(4px);
+}
+/* .form-controlll {
+  border :20px groove #e921ad;
+  display: block;
+  padding: 10px;
+  
+  text-align: center;
+  width: 500px;
+  height: 80px;
+  position: absolute;
+  right: 130px;
+  border-radius: 90px;
+  margin:0;
+  box-shadow: 0px 10px  rgb(3, 88, 138);
+} */
+
+/* 
+.form-inlineee{
+ 
+  padding-top: 10px;
+  background:rgb(204, 137, 160);
+  width: 800px;
+  height:150px;
+} */
+/* .btnnn{
+  width: 90px;
+  height: 60px;
+  background-color:rgb(3, 88, 138);
+  border-radius: 6px;
+} */
+.rounded-circle{
+  padding: 5px 0px;
+  width: 200px;
+  margin-top: -10px !important;
+  float: left;
+  flex: display;
+
+  height: auto;
+
+}
+
+.we{
+  font-size: 20px;
+margin-top: 120px;
+margin-left: 30px;
+}
+.wee{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.weee{
+  font-size: 15px;
+  margin-top: 7px;
+  margin-left: 30px;
+}
+.bu{
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 20px;
+  
+}
+.frr{
+
+  margin-left: 500px;
+  margin-top:230px;
+  width: 100px;
+  height: 50px;
+
+}
+.buu{
+  /* 0float: right; */
+  margin-left: 1050px;
+  margin-bottom:20px; 
+
+  
+}
+.mr{
+  margin-left: 500px;
+  margin-right: 80px; 
+  padding: 10px ;
+}
+/* .dropdown-menu:active{color:#c5a71f;}
+.dropdown-menu:focus, .dropdown-menu:hover{background:#2196f3 ;}
+.navbar{background:#2196f3 ;}
+.nav-item::after{content:'';display:block;width:0px;height:2px;background:#2196f3 ;transition: 0.2s;}
+.nav-item:hover::after{width:100%;}
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+.nav-link{padding:15px 5px;transition:0.2s;} */

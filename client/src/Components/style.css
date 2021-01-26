@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/injection_2_other/1800x1200_injection_2_other.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.mainheader{
+    width: 100%;
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+.mainheader .logo img{
+    width:290px;
+    height: 100px;
+    padding-left: 30px;
+    /* margin-top: 40px; */
+} 
+
+.menubtn{
+    margin-right: 60px;
+}
+.mainheader button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-image:linear-gradient(to right,#649bff,#0070fa,#649bff);
+    border-radius: 10px;
+   
+    
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .rightsec{
+    padding-right: 70px;
+    margin-top: 160px;
+
+}
+main .leftsec{
+    padding-left:90px ;
+
+}
+.leftsec h2{
+    font-size: 20px;
+    text-transform: capitalize;
+font-weight: #242424;
+margin-top: 300px;
+
+}
+.leftsec h1{
+    font-size: 55px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 15px 0;
+
+}
+.leftsec p{
+    margin-bottom: 20px;
+
+}
+
+.button {
+    padding: 15px 45px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-image:linear-gradient(to right,#649bff,#0070fa,#649bff);
+
+    /* background-color: #4CAF50; */
+    border: none;
+    border-radius: 15px;
+    /* box-shadow: 0 9px #999; */
+  }
+  
+  .button:hover {background-color: red}
+  
+  .button:active {
+    background-color: #3e8e41;
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+  }
+
+
+
+.menu{
+    width: 70%;
+    line-height: 80px;
+    background-color: gray; 
+    float: right;
+}
+ul{
+    list-style:none;
+    text-align: right;
+
+}
+li{
+    margin:60px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: inherit;
+    align-items: center;
+    padding: 0,10px;
+    color:black
+
+
+}
+/* .mainheader nav{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.mainheader nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+} */
+
+/* .leftsec button{
+    padding: 15px 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-image:linear-gradient(to right,#649bff,#0070fa,#649bff);
+    border-radius: 10px;
+    
+    
+} */
