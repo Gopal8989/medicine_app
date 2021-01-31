@@ -25,31 +25,10 @@ class Home extends React.Component {
   
   }
   render() {
-    return (<div>
+    return (
       
 <div className="profile-setting-member-table">
-              <div className="table-responsive-xs">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">medicine_name</th>
-                      <th scope="col">Member Designation</th>
-                      <th scope="col">Panel</th>
-                      <th scope="col"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {this.state.data.map((data, i) =>
-                      <tr>
-                        <td scope="row">{data.medicine_name}</td>
-                        
-                       </tr>
-                    )}
-                  </tbody>
-                </table>
-              
-              </div>
-            </div>
+              welcome
 </div>
 
       

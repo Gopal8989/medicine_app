@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
-    
+    /* background-size: 100% 100%; */
+    background-size:cover;
 }
 
 header{
@@ -12,26 +13,48 @@ header{
     height: 100vh;
     background-image: url("https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/injection_2_other/1800x1200_injection_2_other.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size:cover;
 }
 .mainheader{
     width: 100%;
    height: 100px;
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    align-items: center;
+   font-size: large;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
 }
 .mainheader .logo img{
     width:290px;
     height: 100px;
     padding-left: 30px;
-    /* margin-top: 40px; */
+    margin-top: 40px;
 } 
 
 .menubtn{
     margin-right: 60px;
+    margin-top: 75%;
 }
+.menubtn.Btn{
+    padding: 15px 45px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-image:linear-gradient(to right,#649bff,#0070fa,#649bff);
+    /* border: none; */border: none;
+    border-radius: 15px;
+
+}
+.Btn:hover {background-color: red}
+  
+  .Btn:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+  }
+
 .mainheader button{
     padding: 10px 45px;
     text-align: center;
@@ -109,44 +132,69 @@ margin-top: 300px;
     background-color: gray; 
     float: right;
 }
+/* ul{
+    
+
+} */
+.link{
+    text-decoration: none;
+    justify-content: space-between;
+    display: flex;
+}
+.f-div{
+    margin-left: 30%;
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: large;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 ul{
     list-style:none;
     text-align: right;
 
 }
 li{
-    margin:60px;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 18px;
-    font-style: inherit;
-    align-items: center;
-    padding: 0,10px;
-    color:black
-
-
-}
-/* .mainheader nav{
-    width: 450px;
-    display: flex;
+    margin:20px;
     justify-content: space-between;
-    align-items: center;
+    /* margin-top: 40px; */
+    display: inline-block;
+    /* border-radius: 8px; */
+    /* background-color: rgba(1, 0, 2, 0.2); */
+     width: 20vw;
+     height: 9w;
+     font-size: 18px;
+     /* margin-top: 30h; */
+     /* border:10px transparent; */
+    width: auto;
+    height: auto;
+      /* box-shadow: 1px 1px 1px 1px  #004557; */
 
 }
-.mainheader nav a{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-} */
+    .btn{
+        margin-left:30px;
+        float: right;
 
-/* .leftsec button{
-    padding: 15px 45px;
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    border: none;
-    background-image:linear-gradient(to right,#649bff,#0070fa,#649bff);
-    border-radius: 10px;
-    
-    
-} */
+    }
+    .form-inline {
+        height:14px;
+        width: ;
+        margin-top: 10px;
+        /* margin-left:4% */
+      }
+  .form-group {
+    width: 90%;
+  }
+  
+  .input-group {
+    width: 90% !important;
+  }
+  
+  .form-control {
+    height:30px ;
+    /* margin-left:9px; */
+    /* float: right; */
+    width:20%;
+  }
+  

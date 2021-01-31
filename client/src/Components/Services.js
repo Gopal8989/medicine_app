@@ -1,7 +1,10 @@
+import { data } from "jquery";
 import React from "react";
 import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import "./Dash.css";
+const axios = require("axios");
+
 
 class Services extends React.Component {
     constructor(props) {
@@ -10,20 +13,38 @@ class Services extends React.Component {
         this.state = {
          
           fields: {},
+          medicine_name:'',
           data:[]
         };
     
         }
+        // componentDidMount() {
+        //   fetch(`http://localhost:5000/api/medicines`)
+        //     .then(res => res.json())
+        //     // var json=res.json()
+        //     .then(json => this.setState({ data: json }));
+        //     // console.log(this.state.data)
+        // }
     
-        async componentDidMount() {
-            const response = await fetch(`http://localhost:5000/api/medicines`);
-            const json = await response.json();
-            // console.log(json);
-            this.setState({ data: json });
-            // console.log(data.json);
+        //  componentDidMount() {
         
           
-      }
+        //    var medicine_name=  localStorage.getItem('id');
+        //   console.log(this.state.fields);
+        //   this.setState({ medicine_name:  localStorage.getItem('id') });
+        //   alert(medicine_name);
+        //   axios
+        //     .post("http://localhost:5000/api/medicines/singoli","singoli")
+        //     .then((res) => {
+        //       console.log(res.data);
+        //       const json = res.json();
+        //       this.setState({ data: json });
+        //       console.log(json);
+        //     })
+        //     .catch((err) => {
+        //       alert("wrong");
+        //     });
+        // };
     render() {
         return (<div>
           
@@ -42,7 +63,7 @@ class Services extends React.Component {
                       </thead>
                       <tbody>
                         {this.state.data.map((data, i) =>
-                          <tr>
+                          <tr >
                             <td scope="row">{data.medicine_name}</td>
                             <td scope="row">{data.avabile_at}</td>
                             <td scope="row">{data.medicine_details}</td>

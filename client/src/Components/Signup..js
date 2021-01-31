@@ -45,7 +45,7 @@ class Signup extends React.Component {
 
           if (res.data.msg == "1") {
             localStorage.setItem("tempMail:", this.state.fields.email);
-            window.location.assign("/");
+            this.props.history.push("/login");
           } else {
             alert("wrong details");
           }

@@ -40,7 +40,7 @@ class login extends React.Component {
 
         sessionStorage.setItem("token",Dat);
         // window.location.assign("/");
-        this.props.history.push("/")
+        this.props.history.push("/Home")
 
 
 

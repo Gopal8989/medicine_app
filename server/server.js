@@ -8,6 +8,7 @@ const cors=require('cors');
 const users = require('./routes/api/user.routes.js');
 const medicines=require('./routes/api/medicine.routes')
 const forgets=require('./routes/api/forget.routes')
+const medicine_name=require('./routes/api/medicine_name.routes')
 
 const app = express();
 
@@ -51,6 +52,7 @@ app.get('/',function(req,res){
 require('./routes/api/medicine.routes')(app);
 require('./routes/api/user.routes')(app);
 require('./routes/api/forget.routes')(app);
+require('./routes/api/medicine_name.routes')(app);
 
 const port = process.env.PORT || 5000;
 

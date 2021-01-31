@@ -1,7 +1,12 @@
 *{
-  margin: 0%;
-padding: 0%;}
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  /* background-size: 100% 100%; */
+  background-size:cover;
+}
 .div1{
     border-radius: 15px;
      width: 35vw;
