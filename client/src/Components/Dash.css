@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +7,8 @@
   font-family: 'Josefin Sans', sans-serif;
   /* background-size: 100% 100%; */
   background-size:cover;
+  align-items: center;
+    
 }
 .div1{
     border-radius: 15px;
@@ -35,20 +38,18 @@
 
 
 
-* {
-    box-sizing: border-box;
-    align-items: center;
-    
-   
-  }
+
   body {
-      background-image: url(https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/injection_2_other/1800x1200_injection_2_other.jpg);
+      background-image: url(https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=100);
       /* background-image: url(https://images.everydayhealth.com/react-component-images/everyday-health-01.png); */
       filter: blur(0px);
       -webkit-filter: blur(0px);
       text-transform: uppercase;  
       flex-direction: column; 
-      background-size: cover;
+      background-size: 100% 100%;
+      height: 100%;
+    
+      width: 100%;
   }
   
   .fromm{
@@ -66,6 +67,10 @@
       padding: 50px 50px 10px 50px;
       margin-bottom: 1px;
     
+    }
+    .nav-item
+    {
+margin-right: 10px;
     }
     
     
@@ -173,10 +178,10 @@ margin-left: 30px;
   margin-right: 80px; 
   padding: 10px ;
 }
-/* .dropdown-menu:active{color:#c5a71f;}
-.dropdown-menu:focus, .dropdown-menu:hover{background:#2196f3 ;}
+.dropdown-menu:active{color:#c5a71f;}
+.dropdown-menu:focus, .dropdown-menu:hover{background:#d2d7db ;}
 .navbar{background:#2196f3 ;}
 .nav-item::after{content:'';display:block;width:0px;height:2px;background:#2196f3 ;transition: 0.2s;}
 .nav-item:hover::after{width:100%;}
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
-.nav-link{padding:15px 5px;transition:0.2s;} */
+.nav-link{padding:15px 5px;transition:0.2s;}

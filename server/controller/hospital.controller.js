@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken');
 const keys = require('../config/keys');
 const passport = require('passport');
 // const User = require('../models/User');
-const Medicine=require('../models/Medicine')
+const Hospital=require('../models/Hospital')
 // Load input validation
 // const validateRegisterInput = require('../validation/register');
 // const validateLoginInput = require('../validation/login');
@@ -49,27 +49,27 @@ const Medicine=require('../models/Medicine')
 //                   }
 
 exports.create= (req, res) => {console.log(req.body);
-    const newMedicine = new Medicine({
-        medicine_name: req.body.medicine_name,
-                                      quntiy: req.body.quntiy,
-                                      medicine_time: req.body.medicine_time,
-                                      medicine_details:req.body.medicine_details,
-                                      after_before_eating: req.body.after_before_eating,
-                                      drug:req.body.drug,
-                                      price:req.body.price,
-                                      avabile_at:req.body.avabile_at
+    const newHospital = new Hospital({
+      
+                                      specialist: req.body.specialist,
+                                      hospital_name: req.body.hospital_name,
+                                      city:req.body.city,
+                                      address: req.body.address,
+                                      doctor_name:req.body.doctor_name,
+                                      mobile:req.body.mobile,
+                                    //   avabile_at:req.body.avabile_at
                                       // date_of:req.body.date_of,
                                       // address: req.body.address,
         
     });
-    newMedicine.save()
-    .then(Medicine => res.json(Medicine))
+    newHospital.save()
+    .then(Hospital => res.json(Hospital))
     .catch(err => console.log(err));
     }
 
   
   exports.findAll= (req, res) => {
-    Medicine.find().then(data=>{
+    Hospital.find().then(data=>{
         res.json({
             data:data});
     }).catch(err=> {
@@ -92,8 +92,8 @@ exports.create= (req, res) => {console.log(req.body);
 // }
 exports.findById= (req, res) => {
     console.log(req.params);
-    medicine_name = req.params.medicine_name;
-    Medicine.find({medicine_name:req.body.medicine_name }).then(data=>{
+    hospital_name = req.params.hospital_name;
+    Hospital.find({hospital_name:req.body.hospital_name }).then(data=>{
         res.json({
             data:data});
     }).catch(err=> {
@@ -104,8 +104,8 @@ exports.findById= (req, res) => {
 }
 
 exports.delete = (req, res) =>{
-  medicine_name = req.params.medicine_name;
-    Medicine.findOneAndRemove(medicine_name).then(()=>{
+  hospital_name = req.params.hospital_name;
+  Hospital.findOneAndRemove(hospital_name).then(()=>{
         res.json({
             success: true,
             message : "delete successfully"
@@ -120,14 +120,14 @@ exports.delete = (req, res) =>{
 
 exports.update= (req, res) => {
     console.log(req.params);
-    medicine_name = req.params.medicine_name;
+    hospital_name = req.params.hospital_name;
     data=req.body;
     // data = {
     //    name:req.body.name,
     //     email: req.body.email
     // }
    
-    Medicine.findOneAndUpdate(medicine_name,{
+    Hospital.findOneAndUpdate(hospital_name,{
       ...data},{new:true}).then(()=>{
 
         res.json({

@@ -37,11 +37,18 @@ class login extends React.Component {
         const Dat =res.data.token;
 
         console.log(Dat);
-
+        var app=localStorage.getItem("appoment")
         sessionStorage.setItem("token",Dat);
+        console.log(app);
+          if(app=='1'){
+            localStorage.removeItem("appoment")
+        // window.location.assign("/");
+        this.props.history.push("/Appointment")
+          }else{
+            // sessionStorage.setItem("token",Dat);
         // window.location.assign("/");
         this.props.history.push("/Home")
-
+          }
 
 
 // alert("welcome")

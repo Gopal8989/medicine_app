@@ -9,7 +9,8 @@ const users = require('./routes/api/user.routes.js');
 const medicines=require('./routes/api/medicine.routes')
 const forgets=require('./routes/api/forget.routes')
 const medicine_name=require('./routes/api/medicine_name.routes')
-
+const appointments=require('./routes/api/appointment.routes')
+const hospitals=require('./routes/api/hospital.routes')
 const app = express();
 
 // Bodyparser middleware
@@ -53,6 +54,8 @@ require('./routes/api/medicine.routes')(app);
 require('./routes/api/user.routes')(app);
 require('./routes/api/forget.routes')(app);
 require('./routes/api/medicine_name.routes')(app);
+require('./routes/api/appointment.routes')(app);
+require('./routes/api/hospital.routes')(app);
 
 const port = process.env.PORT || 5000;
 

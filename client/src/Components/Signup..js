@@ -11,7 +11,9 @@ class Signup extends React.Component {
       fields: {},
       errors: {},
       data: [],
-      dataa: []
+      dataa: [],
+      
+      // endHour : timezone.format('h:mm:ss a')
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -31,12 +33,13 @@ class Signup extends React.Component {
     e.preventDefault();
 
     if (this.validateFrom()) {
+    
       let fields = {};
-
+      
       this.setState({ fields: fields });
       const userData = this.state.fields;
       userData.role = 1;
-
+      
       console.log(this.state.fields);
       axios
         .post("http://localhost:5000/api/user", userData)
@@ -54,8 +57,8 @@ class Signup extends React.Component {
           console.log(err);
           alert("EROOR");
         });
-    }
-  }
+    
+  }}
 
   validateFrom() {
     let fields = this.state.fields;
@@ -181,7 +184,7 @@ class Signup extends React.Component {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="First_Name"
+                  placeholder="First_Name" size="30"
                   name="name"
                   value={this.state.fields.name || ""}
                   onChange={this.handleChange}
@@ -194,8 +197,8 @@ class Signup extends React.Component {
               <div className="col-md-6">
                 <input
                   type="text"
-                  className="form-control"
-                  name="last"
+                  className="form-control" 
+                  name="last" size="40"
                   placeholder="Last_Name"
                   value={this.state.fields.last || ""}
                   onChange={this.handleChange}
@@ -212,7 +215,7 @@ class Signup extends React.Component {
               type="email"
               className="form-control"
               name="email"
-              placeholder="Email"
+              placeholder="Email"  size="60"
               value={this.state.fields.email || ""}
               onChange={this.handleChange}
             />
@@ -225,7 +228,7 @@ class Signup extends React.Component {
             <div className=" col-md-6">
               <input
                 type="password"
-                className="form-control"
+                className="form-control" size="20"
                 placeholder="Password"
                 name="password"
                 value={this.state.fields.password || ""}
@@ -240,7 +243,7 @@ class Signup extends React.Component {
               <input
                 type="password"
                 className="form-control"
-                placeholder="Confirm Password"
+                placeholder="Confirm Password" size="20"
                 name="password2"
                 value={this.state.fields.password2 || ""}
                 onChange={this.handleChange}
@@ -270,7 +273,7 @@ class Signup extends React.Component {
 
             <div className=" col-md-6">
               <input
-                type="number"
+                type="date"
                 className="form-control"
                 placeholder="Date_of_birth"
                 name="date_of"
@@ -287,7 +290,7 @@ class Signup extends React.Component {
             type="text"
             className="form-control"
             name="address"
-            placeholder="Address"
+            placeholder="Address" size="100"
             value={this.state.fields.address || ""}
             onChange={this.handleChange}
           />
@@ -298,7 +301,7 @@ class Signup extends React.Component {
 
           <div className="form-group">
             <input
-              type="number"
+              type="tel"
               className="form-control"
               placeholder="Mobile_Number"
               name="mobile"

@@ -1,11 +1,12 @@
 import React from "react";
 
+// import NotFound from "./Components/NotFound";
 import Menu from "./Components/Menu";
 import login from "./Components/login";
 import Signup from "./Components/Signup.";
 import Services from "./Components/Services";
 import Terms_condition from "./Components/Terms_condition";
-// import Contact from './Components/Contact'
+import Appointment from './Components/Appointment'
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
 import Help from "./Components/Help";
@@ -30,6 +31,7 @@ class App extends React.Component {
   }
   hidehandle = () => {
     this.setState({ show: true });
+    localStorage.setItem("appoment","1")
   };
   componentWillMount() {
     if (
@@ -47,6 +49,8 @@ class App extends React.Component {
             <Menu />
 
             <Switch>
+            
+            <Route exact path="/Appointment" component={Appointment} />
               <Route exact path="/Help" component={Help} />
               <Route exact path="/Signup" component={Signup} />
               <Route exact path="/login" component={login} />
@@ -62,7 +66,7 @@ class App extends React.Component {
               <Route exact path="/logout" component={Logout} />
               <Route exact path="/NotFound" component={NotFound} />
               <Route exact path="/verify" component={verify} />
-
+              <Route  path="/*" component={NotFound} />
               <Route exact path="/otp" component={otp} />
             </Switch>
             <header>
